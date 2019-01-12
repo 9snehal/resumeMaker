@@ -1,0 +1,193 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type ="text/javascript" src="app.js"></script>
+</head>
+<body>
+<header>
+  <h2>Resume App</h2>
+</header>
+<section>
+  <nav>
+    <div class="dropdown">
+ <button class="dropbtn">Resume</button>
+ <div class="dropdown-content">
+ <a href="#resume1">Resume 1</a>
+ <a href="#">Resume 2</a>
+ <a href="#">Resume 3</a>
+ </div>
+</div>
+  </nav>
+  <article id="resume1">
+    <h2 align="center">First Resume Format:</h2>
+      <div class="container">
+          <form method="post" >
+            <div class="well">
+        <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" class="form-control" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" class="form-control" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-25">
+    <label> Address:</label>
+  </div>
+    <div class="col-75">
+    <input type="textarea" id="add" class="form-control" required placeholder="Enter address">
+  </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+    <label>Email Address:</label>
+  </div>
+    <div class="col-75">
+   <input type="email" id="email" class="form-control" required placeholder="Enter a valid email address">
+ </div>
+     </div>
+     <div class="row">
+     <div class="col-25">
+  <label>  Mobile No:</label>
+</div>
+  <div class="col-75">
+<input type="text" id="Phone" class="form-control" pattern="[7-9]{1}[0-9]{9}"  placeholder="Enter Mobile NO" title="Phone number with 7-9 and remaing 9 digit with 0-9"></br></br>
+</div>
+</div>
+</div>
+  <div class="well">
+<div class="row">
+<div class="col-25">
+  <label> Academic Qualification:</label>
+</div>
+  <div class="col-75">
+<input type="text" id="comment1" class="form-control" required>
+</div>
+</div>
+</div>
+  <div class="well">
+<div class="row">
+<div class="col-25">
+  <label>Computer Skills:</label>
+</div>
+  <div class="col-75">
+<input type="text"  id="comment"  class="form-control" required>
+</div>
+</div>
+</div>
+  <div class="well">
+<div class="personal">
+  <div class="row">
+  <div class="col-25">
+    <h4><b>personal profile:</b></h4>
+  </div>
+</div>
+<div class="row">
+<div class="col-25">
+      <label> Father Name:</label>
+    </div>
+    <div class="col-75">
+    <input type="text" name="Fathname" class="form-control" placeholder="Enter Father name"required>
+  </div></div>
+  <div class="row">
+  <div class="col-25">
+    <label>Mother Name:</label>
+  </div>
+  <div class="col-75">
+  <input type="text" name="Mothname" class="form-control" placeholder="Enter Mother name" required>
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+    <label>Languages Known:</label>
+  </div>
+  <div class="col-75">
+   <input type="checkbox" id="lan1" checked> English
+  <input type="checkbox" id="lan2"> Marathi
+  <input type="checkbox" id="lan3" >Hindi
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+    <label>Gender:</label>
+  </div>
+  <div class="col-75">
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female<br>
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+<label> Marital Status:</label>
+    </div>
+    <div class="col-75">
+ <input type="radio" name="maritalstatus" id="maritalstatus" value="single"checked/>
+  single
+ <input type="radio" name="maritalstatus" id="maritalstatus" value="married"/>
+  Married
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+      <label> Nationality:</label>
+    </div>
+    <div class="col-75">
+    <input type="radio" name="india" id="india" "checked"/>
+  India
+ <input type="radio" name="us" id="us" />US
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+    <label>Date of Birth:</label>
+  </div>
+  <div class="col-75">
+  <input type="date" name="trip-start" value="2000-07-22">
+</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-2 ">
+    <label>Date:</label>
+  </div>
+  <div class="col-md-2 left">
+  <input type="date" id="date" value="2018-07-22">
+</div><br><br>
+</div>
+<div class="row">
+    <div class="col-md-8"></div>
+<div class="col-md-2">
+    <label>Place:</label>
+  </div>
+  <div class="col-md-2 left">
+  <input type="text" id="place" placeholder="Enter place" required></br></br>
+  </div>
+</div>
+</div>
+ </form>
+<div class="submit">
+   <input type="submit" class="btn btn-info" onClick="results()" value="Submit Button" >
+
+</div>
+  </article>
+</section>
+
+<footer>
+  <p>©2019 firstwebapp Design by The Awesome You.</p>
+</footer>
+
+</body>
+</html>
